@@ -1,4 +1,4 @@
 # MaggieValley
 Maggie Valley Website
 
-[Maggie Valley](maggievalley.netlify.com)
+[Maggie Valley](https://maggievalley.netlify.com)
