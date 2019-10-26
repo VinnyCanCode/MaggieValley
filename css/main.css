@@ -36,7 +36,8 @@ body {
         height: 1.5rem; }
       body header .topNav h4 {
         font-weight: 100;
-        font-size: 1.2rem; }
+        font-size: 1.2rem;
+        color: #3F4854; }
     body header .landingPageWrapper {
       width: 100vw;
       height: 85vh;
@@ -61,6 +62,33 @@ body {
             font-size: 1.1rem; }
             body header .landingPageWrapper .headerCenterContent .headerNav ul li {
               margin-right: 1.5rem; }
+            body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_list {
+              width: 15%;
+              height: 38%;
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              position: absolute;
+              background: white;
+              color: #3F4854;
+              border-top: 3px solid #3F4854;
+              border: .1px solid transparent;
+              border-radius: 1%; }
+              body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_list li {
+                width: 100%;
+                margin-bottom: .5rem;
+                padding: .5rem; }
+              body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_list li:hover {
+                background-color: lightblue;
+                border-left: 3px solid #3F4854; }
+              body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_list.one, body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_list.two, body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_list.three, body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_list.four {
+                display: none; }
+              body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_list.two, body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_list.four {
+                height: 25%; }
+              body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_list.three {
+                height: 32%; }
+            body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_one:hover .dropdown_list, body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_one:hover .one, body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_two:hover .dropdown_list, body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_two:hover .one, body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_three:hover .dropdown_list, body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_three:hover .one, body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_four:hover .dropdown_list, body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_four:hover .one {
+              display: flex; }
         body header .landingPageWrapper .headerCenterContent .headerWords {
           width: 50vw;
           line-height: 2rem; }
@@ -90,9 +118,30 @@ body {
             grid-column: 3 / span 1;
             align-self: center;
             justify-self: center; }
+            body header .landingPageWrapper .visitCardContainer .visitCard .visitWords sup {
+              height: 100%;
+              width: 100%; }
+        body header .landingPageWrapper .visitCardContainer .visitCard:hover {
+          cursor: pointer; }
+          body header .landingPageWrapper .visitCardContainer .visitCard:hover sup {
+            animation-name: slide;
+            animation-duration: .5s;
+            position: relative; }
+
+@keyframes slide {
+  0% {
+    left: 0px; }
+  50% {
+    left: 20px;
+    color: transparent; }
+  75% {
+    color: transparent; }
+  95% {
+    left: -20px;
+    color: transparent; }
+  100% {
+    left: 0px; } }
   body .centerInfo {
-    width: 100vw;
-    height: 200vh;
     display: flex;
     justify-content: center;
     padding: 0 15rem 0 15rem; }
@@ -310,14 +359,14 @@ body {
       grid-column: 1 / span 3;
       grid-row: 2 / span 1;
       justify-content: flex-start;
-      color: #D2D2D2; }
+      color: #D4F4DD; }
       body footer .footerCenter ul {
         margin-right: 5rem; }
     body footer .footerBottom {
       grid-column: 1 / span 3;
       grid-row: 3 / span 1;
       justify-content: flex-start;
-      color: #D2D2D2;
+      color: #D4F4DD;
       border: none; }
       body footer .footerBottom ul {
         margin-right: 7rem; }
