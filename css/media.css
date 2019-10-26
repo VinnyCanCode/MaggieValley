@@ -1,0 +1,171 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0; }
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  html {
+    box-sizing: border-box; }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0; }
+  .addedPadding {
+    padding-left: 50px;
+    padding-right: 50px; }
+  body .centerInfo .centerWrapper .aboutUsCards .cardOne .aboutPicture {
+    grid-column: 1 / span 1;
+    width: 40vw; } }
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  html {
+    font-size: 14px; }
+  .addedPadding {
+    padding-left: 30px;
+    padding-right: 30px; }
+  body .landingPageWrapper {
+    height: 85vh !important; }
+    body .landingPageWrapper .headerCenterContent .headerWords {
+      width: 80vw !important; }
+      body .landingPageWrapper .headerCenterContent .headerWords h1 {
+        font-size: 2rem; }
+      body .landingPageWrapper .headerCenterContent .headerWords p {
+        font-size: 5rem; }
+    body .landingPageWrapper .visitCardContainer .visitCard {
+      width: 100vw !important; }
+      body .landingPageWrapper .visitCardContainer .visitCard .visitImg {
+        width: 20vh; }
+      body .landingPageWrapper .visitCardContainer .visitCard .visitWords {
+        width: 70vh; }
+  body .centerInfo .centerWrapper .aboutUsCards .cardOne .aboutPicture {
+    display: none; }
+  body .centerInfo .centerWrapper .aboutUsCards .cardOne .aboutInfo {
+    grid-column: 1 / span 2; }
+  body .centerInfo .centerWrapper .aboutUsCards .cardTwo .aboutPicture {
+    display: none; }
+  body .centerInfo .centerWrapper .aboutUsCards .cardTwo .aboutInfo {
+    grid-column: 1 / span 2; }
+  body .statsSection {
+    justify-content: center; }
+    body .statsSection .statsWrapper {
+      justify-content: center;
+      align-items: center;
+      height: 70vh; }
+      body .statsSection .statsWrapper .statsInfoWrapper {
+        grid-gap: 5%; }
+        body .statsSection .statsWrapper .statsInfoWrapper .statsInfo {
+          grid-row: 1 / span 1; }
+          body .statsSection .statsWrapper .statsInfoWrapper .statsInfo h3 {
+            width: 80vw; }
+        body .statsSection .statsWrapper .statsInfoWrapper .statButtons {
+          grid-row: 2 / span 1;
+          grid-gap: 10%; }
+          body .statsSection .statsWrapper .statsInfoWrapper .statButtons .buttonOne, body .statsSection .statsWrapper .statsInfoWrapper .statButtons .buttonTwo, body .statsSection .statsWrapper .statsInfoWrapper .statButtons .buttonThree {
+            grid-row: 1 / span 1; }
+  body .supportSection .supportWrapper .supportInfo {
+    font-size: 1.3rem; }
+    body .supportSection .supportWrapper .supportInfo button {
+      width: 13rem; }
+  body .supportSection .supportWrapper .supportImg img {
+    height: 15rem;
+    width: 15rem; }
+  body footer .footerBottom ul {
+    margin-right: 0rem; } }
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .addedPadding {
+    padding-left: 30px;
+    padding-right: 30px; }
+  body .centerInfo .centerWrapper .aboutUsCards .cardOne .aboutPicture {
+    grid-column: 1 / span 1;
+    width: 40vw;
+    align-self: center; } }
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+  html {
+    font-size: 14px; }
+  .addedPadding {
+    padding-left: 30px;
+    padding-right: 30px; }
+  body .landingPageWrapper {
+    height: 85vh !important; }
+    body .landingPageWrapper .headerCenterContent .headerWords {
+      width: 80vw !important; }
+      body .landingPageWrapper .headerCenterContent .headerWords h1 {
+        font-size: 2rem; }
+      body .landingPageWrapper .headerCenterContent .headerWords p {
+        font-size: 5rem; }
+    body .landingPageWrapper .visitCardContainer .visitCard {
+      width: 100vw !important; }
+      body .landingPageWrapper .visitCardContainer .visitCard .visitImg {
+        width: 20vh; }
+      body .landingPageWrapper .visitCardContainer .visitCard .visitWords {
+        width: 40vh; }
+  body .centerInfo .centerWrapper .aboutUsCards .cardOne .aboutPicture {
+    display: none; }
+  body .centerInfo .centerWrapper .aboutUsCards .cardOne .aboutInfo {
+    grid-column: 1 / span 2; }
+  body .centerInfo .centerWrapper .aboutUsCards .cardTwo .aboutPicture {
+    display: none; }
+  body .centerInfo .centerWrapper .aboutUsCards .cardTwo .aboutInfo {
+    grid-column: 1 / span 2; }
+  body .statsSection .statsWrapper {
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-right: 30px; }
+    body .statsSection .statsWrapper .statsInfoWrapper {
+      grid-gap: 5%; }
+      body .statsSection .statsWrapper .statsInfoWrapper .statsInfo {
+        grid-row: 1 / span 1; }
+        body .statsSection .statsWrapper .statsInfoWrapper .statsInfo h3 {
+          width: 80vw; }
+      body .statsSection .statsWrapper .statsInfoWrapper .statButtons {
+        grid-row: 2 / span 1;
+        grid-gap: 10%; }
+        body .statsSection .statsWrapper .statsInfoWrapper .statButtons .buttonOne, body .statsSection .statsWrapper .statsInfoWrapper .statButtons .buttonTwo, body .statsSection .statsWrapper .statsInfoWrapper .statButtons .buttonThree {
+          grid-row: 1 / span 1; }
+  body .supportSection .supportWrapper .supportInfo {
+    font-size: 1.3rem; }
+    body .supportSection .supportWrapper .supportInfo button {
+      width: 13rem; }
+  body .supportSection .supportWrapper .supportImg img {
+    height: 15rem;
+    width: 15rem; }
+  body footer .footerWrapper {
+    width: 100vw; }
+  body footer .footerBottom {
+    width: 100vw; }
+    body footer .footerBottom ul {
+      margin-right: 0rem; } }
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/

@@ -8,6 +8,10 @@ html {
   padding: 0;
   margin: 0; }
 
+.addedPadding {
+  padding-left: 200px;
+  padding-right: 200px; }
+
 body {
   width: 100vw;
   height: 100vh; }
@@ -20,8 +24,7 @@ body {
       justify-content: space-between;
       align-items: center;
       width: 100vw;
-      height: 5vh;
-      padding: 0 15rem 0 15rem; }
+      height: 5vh; }
       body header .topNav ul {
         display: flex;
         flex-direction: row;
@@ -44,61 +47,89 @@ body {
       background: url("../imgs/tunnelView.jpeg") 100%/cover no-repeat;
       color: white;
       position: relative; }
-      body header .landingPageWrapper .headerCenterContent {
-        padding: 3rem 15rem 0 15rem; }
-        body header .landingPageWrapper .headerCenterContent .headerNav {
+      body header .landingPageWrapper .headerCenterContent .hamburgerMenu {
+        width: 60vw;
+        display: flex;
+        height: 4rem;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center; }
+        body header .landingPageWrapper .headerCenterContent .hamburgerMenu li {
+          list-style: none;
+          margin-right: 5rem; }
+        body header .landingPageWrapper .headerCenterContent .hamburgerMenu .bar1, body header .landingPageWrapper .headerCenterContent .hamburgerMenu .bar2, body header .landingPageWrapper .headerCenterContent .hamburgerMenu .bar3 {
+          width: 2rem;
+          height: .25rem;
+          background-color: #fff;
+          margin: .4rem 0 0 0;
+          transition: 0.4s;
+          border: .1px solid transparent;
+          border-radius: 1rem; }
+        body header .landingPageWrapper .headerCenterContent .hamburgerMenu .openMenu {
+          opacity: 0; }
+        body header .landingPageWrapper .headerCenterContent .hamburgerMenu .bar1.change {
+          transform: rotate(-45deg) translate(-5px, 6px);
+          background-color: #ef3e5d; }
+        body header .landingPageWrapper .headerCenterContent .hamburgerMenu .bar3.change {
+          transform: rotate(45deg) translate(-8px, -8px);
+          background-color: #ef3e5d; }
+        body header .landingPageWrapper .headerCenterContent .hamburgerMenu .openMenu.change {
+          opacity: 1; }
+        body header .landingPageWrapper .headerCenterContent .hamburgerMenu .bar2.change {
+          opacity: 0; }
+      body header .landingPageWrapper .headerCenterContent .headerNav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 5rem;
+        padding-top: 50px; }
+        body header .landingPageWrapper .headerCenterContent .headerNav .headerLogo img {
+          width: 4rem;
+          height: 4rem; }
+        body header .landingPageWrapper .headerCenterContent .headerNav ul {
           display: flex;
           flex-direction: row;
-          justify-content: space-between;
-          margin-bottom: 5rem; }
-          body header .landingPageWrapper .headerCenterContent .headerNav .headerLogo img {
-            width: 4rem;
-            height: 4rem; }
-          body header .landingPageWrapper .headerCenterContent .headerNav ul {
+          list-style: none;
+          align-items: center;
+          font-size: 1.1rem; }
+          body header .landingPageWrapper .headerCenterContent .headerNav ul li {
+            margin-right: 3rem; }
+          body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_list {
+            width: 15%;
+            height: 38%;
             display: flex;
-            flex-direction: row;
-            list-style: none;
-            align-items: center;
-            font-size: 1.1rem; }
-            body header .landingPageWrapper .headerCenterContent .headerNav ul li {
-              margin-right: 1.5rem; }
-            body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_list {
-              width: 15%;
-              height: 38%;
-              display: flex;
-              flex-direction: column;
-              align-items: flex-start;
-              position: absolute;
-              background: white;
-              color: #3F4854;
-              border-top: 3px solid #3F4854;
-              border: .1px solid transparent;
-              border-radius: 1%; }
-              body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_list li {
-                width: 100%;
-                margin-bottom: .5rem;
-                padding: .5rem; }
-              body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_list li:hover {
-                background-color: lightblue;
-                border-left: 3px solid #3F4854; }
-              body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_list.one, body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_list.two, body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_list.three, body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_list.four {
-                display: none; }
-              body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_list.two, body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_list.four {
-                height: 25%; }
-              body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_list.three {
-                height: 32%; }
-            body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_one:hover .dropdown_list, body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_one:hover .one, body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_two:hover .dropdown_list, body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_two:hover .one, body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_three:hover .dropdown_list, body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_three:hover .one, body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_four:hover .dropdown_list, body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_four:hover .one {
-              display: flex; }
-        body header .landingPageWrapper .headerCenterContent .headerWords {
-          width: 50vw;
-          line-height: 2rem; }
-          body header .landingPageWrapper .headerCenterContent .headerWords h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem; }
-          body header .landingPageWrapper .headerCenterContent .headerWords p {
-            width: 40vw;
-            font-size: 1.2rem;
-            text-shadow: 1px 1px black; }
+            flex-direction: column;
+            align-items: flex-start;
+            position: absolute;
+            background: white;
+            color: #3F4854;
+            border-top: 3px solid #3F4854;
+            border: .1px solid transparent;
+            border-radius: 1%; }
+            body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_list li {
+              width: 100%;
+              margin-bottom: .5rem;
+              padding: .5rem; }
+            body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_list li:hover {
+              background-color: lightblue;
+              border-left: 3px solid #3F4854; }
+            body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_list.one, body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_list.two, body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_list.three, body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_list.four {
+              display: none; }
+            body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_list.two, body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_list.four {
+              height: 27%; }
+            body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_list.three {
+              height: 32%; }
+          body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_one:hover .dropdown_list, body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_one:hover .one, body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_two:hover .dropdown_list, body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_two:hover .one, body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_three:hover .dropdown_list, body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_three:hover .one, body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_four:hover .dropdown_list, body header .landingPageWrapper .headerCenterContent .headerNav ul .dropdown_four:hover .one {
+            display: flex; }
+      body header .landingPageWrapper .headerCenterContent .headerWords {
+        width: 60vw;
+        line-height: 2rem; }
+        body header .landingPageWrapper .headerCenterContent .headerWords h1 {
+          font-size: 3.5rem;
+          line-height: 3rem; }
+        body header .landingPageWrapper .headerCenterContent .headerWords p {
+          font-size: 1.2rem;
+          text-shadow: 1px 1px black; }
       body header .landingPageWrapper .visitCardContainer {
         display: flex;
         position: absolute;
@@ -143,8 +174,7 @@ body {
     left: 0px; } }
   body .centerInfo {
     display: flex;
-    justify-content: center;
-    padding: 0 15rem 0 15rem; }
+    justify-content: center; }
     body .centerInfo .centerWrapper {
       width: 100vw;
       height: 100%;
@@ -179,31 +209,38 @@ body {
           border-radius: 30px; }
       body .centerInfo .centerWrapper .aboutUsCards .cardOne .aboutPicture {
         grid-column: 1 / span 1;
-        width: 70%; }
+        width: 30vw; }
         body .centerInfo .centerWrapper .aboutUsCards .cardOne .aboutPicture img {
           width: 100%; }
       body .centerInfo .centerWrapper .aboutUsCards .cardOne .aboutInfo {
         grid-column: 2 / span 1;
-        text-align: left; }
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
       body .centerInfo .centerWrapper .aboutUsCards .cardTwo .aboutPicture {
         grid-column: 2 / span 1;
         width: 100%;
         text-align: right; }
         body .centerInfo .centerWrapper .aboutUsCards .cardTwo .aboutPicture img {
-          width: 80%; }
+          width: 90%; }
       body .centerInfo .centerWrapper .aboutUsCards .cardTwo .aboutInfo {
         grid-column: 1 / span 1;
         width: 100%;
-        text-align: left; }
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
   body .statsSection {
-    height: 65vh;
+    height: 100vh;
     display: flex;
     align-items: center; }
     body .statsSection .statsWrapper {
       width: 100vw;
       display: flex;
       justify-content: center;
-      height: 65vh;
+      align-items: center;
+      height: 80vh;
       background: #11998e;
       /* fallback for old browsers */
       background: -webkit-linear-gradient(to left, #38ef7d, #38ef7d);
@@ -213,7 +250,9 @@ body {
       body .statsSection .statsWrapper .statsInfoWrapper {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        width: 60vw;
+        width: 70vw;
+        height: 100%;
+        align-items: center;
         color: white; }
         body .statsSection .statsWrapper .statsInfoWrapper .statsInfo {
           width: 40vw;
@@ -285,7 +324,8 @@ body {
     align-items: center; }
     body .supportSection .supportWrapper {
       display: grid;
-      grid-template-columns: repeat(2, 1fr); }
+      grid-template-columns: repeat(2, 1fr);
+      margin: 0 30px; }
       body .supportSection .supportWrapper .supportInfo {
         display: flex;
         flex-direction: column;
@@ -326,10 +366,10 @@ body {
     flex-direction: row;
     justify-content: center; }
     body footer .footerWrapper {
-      width: 70vw;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(3, 1fr); }
+      grid-template-rows: repeat(3, 1fr);
+      padding: 1rem 1rem; }
     body footer img {
       width: 5rem;
       height: 5rem; }
@@ -361,7 +401,7 @@ body {
       justify-content: flex-start;
       color: #D4F4DD; }
       body footer .footerCenter ul {
-        margin-right: 5rem; }
+        margin-right: 2.5rem; }
     body footer .footerBottom {
       grid-column: 1 / span 3;
       grid-row: 3 / span 1;
@@ -369,7 +409,179 @@ body {
       color: #D4F4DD;
       border: none; }
       body footer .footerBottom ul {
-        margin-right: 7rem; }
+        margin-right: 5rem; }
       body footer .footerBottom img {
         width: 1.3rem;
         height: 1.3rem; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0; }
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  html {
+    box-sizing: border-box; }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0; }
+  .addedPadding {
+    padding-left: 50px;
+    padding-right: 50px; }
+  body .centerInfo .centerWrapper .aboutUsCards .cardOne .aboutPicture {
+    grid-column: 1 / span 1;
+    width: 40vw; } }
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  html {
+    font-size: 14px; }
+  .addedPadding {
+    padding-left: 30px;
+    padding-right: 30px; }
+  body .landingPageWrapper {
+    height: 85vh !important; }
+    body .landingPageWrapper .headerCenterContent .headerWords {
+      width: 80vw !important; }
+      body .landingPageWrapper .headerCenterContent .headerWords h1 {
+        font-size: 2rem; }
+      body .landingPageWrapper .headerCenterContent .headerWords p {
+        font-size: 5rem; }
+    body .landingPageWrapper .visitCardContainer .visitCard {
+      width: 100vw !important; }
+      body .landingPageWrapper .visitCardContainer .visitCard .visitImg {
+        width: 20vh; }
+      body .landingPageWrapper .visitCardContainer .visitCard .visitWords {
+        width: 70vh; }
+  body .centerInfo .centerWrapper .aboutUsCards .cardOne .aboutPicture {
+    display: none; }
+  body .centerInfo .centerWrapper .aboutUsCards .cardOne .aboutInfo {
+    grid-column: 1 / span 2; }
+  body .centerInfo .centerWrapper .aboutUsCards .cardTwo .aboutPicture {
+    display: none; }
+  body .centerInfo .centerWrapper .aboutUsCards .cardTwo .aboutInfo {
+    grid-column: 1 / span 2; }
+  body .statsSection {
+    justify-content: center; }
+    body .statsSection .statsWrapper {
+      justify-content: center;
+      align-items: center;
+      height: 70vh; }
+      body .statsSection .statsWrapper .statsInfoWrapper {
+        grid-gap: 5%; }
+        body .statsSection .statsWrapper .statsInfoWrapper .statsInfo {
+          grid-row: 1 / span 1; }
+          body .statsSection .statsWrapper .statsInfoWrapper .statsInfo h3 {
+            width: 80vw; }
+        body .statsSection .statsWrapper .statsInfoWrapper .statButtons {
+          grid-row: 2 / span 1;
+          grid-gap: 10%; }
+          body .statsSection .statsWrapper .statsInfoWrapper .statButtons .buttonOne, body .statsSection .statsWrapper .statsInfoWrapper .statButtons .buttonTwo, body .statsSection .statsWrapper .statsInfoWrapper .statButtons .buttonThree {
+            grid-row: 1 / span 1; }
+  body .supportSection .supportWrapper .supportInfo {
+    font-size: 1.3rem; }
+    body .supportSection .supportWrapper .supportInfo button {
+      width: 13rem; }
+  body .supportSection .supportWrapper .supportImg img {
+    height: 15rem;
+    width: 15rem; }
+  body footer .footerBottom ul {
+    margin-right: 0rem; } }
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .addedPadding {
+    padding-left: 30px;
+    padding-right: 30px; }
+  body .centerInfo .centerWrapper .aboutUsCards .cardOne .aboutPicture {
+    grid-column: 1 / span 1;
+    width: 40vw;
+    align-self: center; } }
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+  html {
+    font-size: 14px; }
+  .addedPadding {
+    padding-left: 30px;
+    padding-right: 30px; }
+  body .landingPageWrapper {
+    height: 85vh !important; }
+    body .landingPageWrapper .headerCenterContent .headerWords {
+      width: 80vw !important; }
+      body .landingPageWrapper .headerCenterContent .headerWords h1 {
+        font-size: 2rem; }
+      body .landingPageWrapper .headerCenterContent .headerWords p {
+        font-size: 5rem; }
+    body .landingPageWrapper .visitCardContainer .visitCard {
+      width: 100vw !important; }
+      body .landingPageWrapper .visitCardContainer .visitCard .visitImg {
+        width: 20vh; }
+      body .landingPageWrapper .visitCardContainer .visitCard .visitWords {
+        width: 40vh; }
+  body .centerInfo .centerWrapper .aboutUsCards .cardOne .aboutPicture {
+    display: none; }
+  body .centerInfo .centerWrapper .aboutUsCards .cardOne .aboutInfo {
+    grid-column: 1 / span 2; }
+  body .centerInfo .centerWrapper .aboutUsCards .cardTwo .aboutPicture {
+    display: none; }
+  body .centerInfo .centerWrapper .aboutUsCards .cardTwo .aboutInfo {
+    grid-column: 1 / span 2; }
+  body .statsSection .statsWrapper {
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-right: 30px; }
+    body .statsSection .statsWrapper .statsInfoWrapper {
+      grid-gap: 5%; }
+      body .statsSection .statsWrapper .statsInfoWrapper .statsInfo {
+        grid-row: 1 / span 1; }
+        body .statsSection .statsWrapper .statsInfoWrapper .statsInfo h3 {
+          width: 80vw; }
+      body .statsSection .statsWrapper .statsInfoWrapper .statButtons {
+        grid-row: 2 / span 1;
+        grid-gap: 10%; }
+        body .statsSection .statsWrapper .statsInfoWrapper .statButtons .buttonOne, body .statsSection .statsWrapper .statsInfoWrapper .statButtons .buttonTwo, body .statsSection .statsWrapper .statsInfoWrapper .statButtons .buttonThree {
+          grid-row: 1 / span 1; }
+  body .supportSection .supportWrapper .supportInfo {
+    font-size: 1.3rem; }
+    body .supportSection .supportWrapper .supportInfo button {
+      width: 13rem; }
+  body .supportSection .supportWrapper .supportImg img {
+    height: 15rem;
+    width: 15rem; }
+  body footer .footerWrapper {
+    width: 100vw; }
+  body footer .footerBottom {
+    width: 100vw; }
+    body footer .footerBottom ul {
+      margin-right: 0rem; } }
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
