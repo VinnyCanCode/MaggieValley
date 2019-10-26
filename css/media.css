@@ -12,6 +12,16 @@ html {
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
 */
+@media (min-width: 1281px) {
+  body header .landingPageWrapper .headerCenterContent {
+    padding-right: 0px; }
+    body header .landingPageWrapper .headerCenterContent nav {
+      justify-content: space-around; }
+      body header .landingPageWrapper .headerCenterContent nav .hamburgerMenu {
+        display: none; }
+      body header .landingPageWrapper .headerCenterContent nav .fullMenu {
+        display: inherit; } }
+
 /*
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
@@ -28,6 +38,16 @@ html {
   .addedPadding {
     padding-left: 50px;
     padding-right: 50px; }
+  body header .landingPageWrapper {
+    padding-right: 0px; }
+    body header .landingPageWrapper .headerCenterContent {
+      padding-right: 0px; }
+      body header .landingPageWrapper .headerCenterContent nav {
+        justify-content: space-between; }
+        body header .landingPageWrapper .headerCenterContent nav .hamburgerMenu {
+          display: none; }
+        body header .landingPageWrapper .headerCenterContent nav .fullMenu {
+          display: inherit; }
   body .centerInfo .centerWrapper .aboutUsCards .cardOne .aboutPicture {
     grid-column: 1 / span 1;
     width: 40vw; } }
@@ -37,19 +57,24 @@ html {
   ##Screen = B/w 768px to 1024px
 */
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  html {
-    font-size: 14px; }
   .addedPadding {
     padding-left: 30px;
     padding-right: 30px; }
   body .landingPageWrapper {
     height: 85vh !important; }
-    body .landingPageWrapper .headerCenterContent .headerWords {
-      width: 80vw !important; }
-      body .landingPageWrapper .headerCenterContent .headerWords h1 {
-        font-size: 2rem; }
-      body .landingPageWrapper .headerCenterContent .headerWords p {
-        font-size: 5rem; }
+    body .landingPageWrapper .headerCenterContent {
+      padding-right: 0px; }
+      body .landingPageWrapper .headerCenterContent nav {
+        width: 10vw !important;
+        justify-content: space-between !important; }
+        body .landingPageWrapper .headerCenterContent nav .fullMenu {
+          display: none  !important; }
+      body .landingPageWrapper .headerCenterContent .headerWords {
+        width: 80vw !important; }
+        body .landingPageWrapper .headerCenterContent .headerWords h1 {
+          font-size: 2rem; }
+        body .landingPageWrapper .headerCenterContent .headerWords p {
+          font-size: 5rem; }
     body .landingPageWrapper .visitCardContainer .visitCard {
       width: 100vw !important; }
       body .landingPageWrapper .visitCardContainer .visitCard .visitImg {
@@ -99,10 +124,19 @@ html {
   .addedPadding {
     padding-left: 30px;
     padding-right: 30px; }
+  body header .landingPageWrapper .headerCenterContent {
+    padding-right: 0px; }
+    body header .landingPageWrapper .headerCenterContent nav {
+      width: 120vw;
+      justify-content: space-around; }
+      body header .landingPageWrapper .headerCenterContent nav .fullMenu {
+        display: none; }
   body .centerInfo .centerWrapper .aboutUsCards .cardOne .aboutPicture {
     grid-column: 1 / span 1;
     width: 40vw;
-    align-self: center; } }
+    align-self: center; }
+  body footer .footerBottom ul {
+    margin-right: 1rem; } }
 
 /*
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
@@ -116,12 +150,19 @@ html {
     padding-right: 30px; }
   body .landingPageWrapper {
     height: 85vh !important; }
-    body .landingPageWrapper .headerCenterContent .headerWords {
-      width: 80vw !important; }
-      body .landingPageWrapper .headerCenterContent .headerWords h1 {
-        font-size: 2rem; }
-      body .landingPageWrapper .headerCenterContent .headerWords p {
-        font-size: 5rem; }
+    body .landingPageWrapper .headerCenterContent {
+      padding-right: 0px; }
+      body .landingPageWrapper .headerCenterContent nav {
+        width: 115vw !important;
+        justify-content: space-between !important; }
+        body .landingPageWrapper .headerCenterContent nav .fullMenu {
+          display: none !important; }
+      body .landingPageWrapper .headerCenterContent .headerWords {
+        width: 80vw !important; }
+        body .landingPageWrapper .headerCenterContent .headerWords h1 {
+          font-size: 2rem; }
+        body .landingPageWrapper .headerCenterContent .headerWords p {
+          font-size: 5rem; }
     body .landingPageWrapper .visitCardContainer .visitCard {
       width: 100vw !important; }
       body .landingPageWrapper .visitCardContainer .visitCard .visitImg {
