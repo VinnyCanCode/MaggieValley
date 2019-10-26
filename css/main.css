@@ -428,6 +428,11 @@ html {
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
 */
+@media (min-width: 1281px) {
+  .addedPadding {
+    padding-left: 50px;
+    padding-right: 50px; } }
+
 /*
   ##Device = Laptops, Desktops
   ##Screen = B/w 1025px to 1280px
