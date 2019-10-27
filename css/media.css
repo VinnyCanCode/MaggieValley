@@ -65,10 +65,14 @@ html {
     body .landingPageWrapper .headerCenterContent {
       padding-right: 0px; }
       body .landingPageWrapper .headerCenterContent nav {
-        width: 10vw !important;
+        width: 96.1vw !important;
         justify-content: space-between !important; }
         body .landingPageWrapper .headerCenterContent nav .fullMenu {
           display: none  !important; }
+        body .landingPageWrapper .headerCenterContent nav .SideMenu {
+          left: 80%;
+          height: 32vh;
+          display: none; }
       body .landingPageWrapper .headerCenterContent .headerWords {
         width: 80vw !important; }
         body .landingPageWrapper .headerCenterContent .headerWords h1 {
@@ -127,9 +131,12 @@ html {
   body header .landingPageWrapper .headerCenterContent {
     padding-right: 0px; }
     body header .landingPageWrapper .headerCenterContent nav {
-      width: 120vw;
+      width: 96vw;
       justify-content: space-around; }
       body header .landingPageWrapper .headerCenterContent nav .fullMenu {
+        display: none; }
+      body header .landingPageWrapper .headerCenterContent nav .SideMenu {
+        left: 80vh;
         display: none; }
   body .centerInfo .centerWrapper .aboutUsCards .cardOne .aboutPicture {
     grid-column: 1 / span 1;
@@ -153,10 +160,15 @@ html {
     body .landingPageWrapper .headerCenterContent {
       padding-right: 0px; }
       body .landingPageWrapper .headerCenterContent nav {
-        width: 115vw !important;
+        width: 94vw !important;
         justify-content: space-between !important; }
+        body .landingPageWrapper .headerCenterContent nav .hamburgerMenu {
+          width: 20%; }
         body .landingPageWrapper .headerCenterContent nav .fullMenu {
           display: none !important; }
+        body .landingPageWrapper .headerCenterContent nav .SideMenu {
+          width: 30%;
+          height: 28vh; }
       body .landingPageWrapper .headerCenterContent .headerWords {
         width: 80vw !important; }
         body .landingPageWrapper .headerCenterContent .headerWords h1 {
@@ -202,7 +214,7 @@ html {
   body footer .footerWrapper {
     width: 100vw; }
   body footer .footerBottom {
-    width: 100vw; }
+    width: 90vw; }
     body footer .footerBottom ul {
       margin-right: 0rem; } }
 
@@ -210,3 +222,87 @@ html {
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
 */
+@media (min-width: 320px) and (max-width: 480px) {
+  html {
+    font-size: 14px;
+    margin: 0; }
+  .addedPadding {
+    padding-left: 30px;
+    padding-right: 30px; }
+  body .landingPageWrapper {
+    height: 85vh !important; }
+    body .landingPageWrapper .headerCenterContent {
+      padding-right: 0px; }
+      body .landingPageWrapper .headerCenterContent nav {
+        width: 40vw !important;
+        justify-content: space-between !important; }
+        body .landingPageWrapper .headerCenterContent nav .hamburgerMenu {
+          display: none !important; }
+        body .landingPageWrapper .headerCenterContent nav .fullMenu {
+          display: none !important; }
+      body .landingPageWrapper .headerCenterContent .headerWords {
+        width: 80vw !important; }
+        body .landingPageWrapper .headerCenterContent .headerWords h1 {
+          font-size: 2rem; }
+        body .landingPageWrapper .headerCenterContent .headerWords p {
+          font-size: 5rem; }
+    body .landingPageWrapper .visitCardContainer .visitCard {
+      width: 100vw !important; }
+      body .landingPageWrapper .visitCardContainer .visitCard .visitImg {
+        width: 15vh; }
+      body .landingPageWrapper .visitCardContainer .visitCard .visitWords {
+        width: 25vh; }
+  body .centerInfo .centerWrapper .aboutUsCards .cardOne .aboutPicture {
+    display: none; }
+  body .centerInfo .centerWrapper .aboutUsCards .cardOne .aboutInfo {
+    grid-column: 1 / span 2; }
+  body .centerInfo .centerWrapper .aboutUsCards .cardTwo .aboutPicture {
+    display: none; }
+  body .centerInfo .centerWrapper .aboutUsCards .cardTwo .aboutInfo {
+    grid-column: 1 / span 2; }
+  body .statsSection .statsWrapper {
+    justify-content: flex-start;
+    padding-left: 30px;
+    padding-right: 30px; }
+    body .statsSection .statsWrapper .statsInfoWrapper {
+      grid-gap: 5%; }
+      body .statsSection .statsWrapper .statsInfoWrapper .statsInfo {
+        grid-row: 1 / span 1; }
+        body .statsSection .statsWrapper .statsInfoWrapper .statsInfo h3 {
+          width: 80vw; }
+      body .statsSection .statsWrapper .statsInfoWrapper .statButtons {
+        grid-row: 2 / span 1;
+        grid-gap: 15%; }
+        body .statsSection .statsWrapper .statsInfoWrapper .statButtons button {
+          width: 7rem;
+          height: 7rem; }
+        body .statsSection .statsWrapper .statsInfoWrapper .statButtons .buttonOne, body .statsSection .statsWrapper .statsInfoWrapper .statButtons .buttonTwo, body .statsSection .statsWrapper .statsInfoWrapper .statButtons .buttonThree {
+          grid-row: 1 / span 1; }
+          body .statsSection .statsWrapper .statsInfoWrapper .statButtons .buttonOne img, body .statsSection .statsWrapper .statsInfoWrapper .statButtons .buttonTwo img, body .statsSection .statsWrapper .statsInfoWrapper .statButtons .buttonThree img {
+            width: 1rem;
+            height: 1rem; }
+  body .supportSection .supportWrapper .supportInfo {
+    font-size: 1.3rem; }
+    body .supportSection .supportWrapper .supportInfo button {
+      width: 13rem; }
+  body .supportSection .supportWrapper .supportImg img {
+    height: 10rem;
+    width: 10rem; }
+  body footer {
+    height: 80%;
+    justify-content: flex-start; }
+    body footer .footerWrapper {
+      padding: 0 0;
+      grid-template-rows: repeat(autofit, minmax(3rem, 1fr)); }
+    body footer .footerNav {
+      grid-row: 1 / span 1; }
+    body footer .footerCenter {
+      height: 90%;
+      grid-row: 2 / span 2; }
+    body footer .footerBottom {
+      grid-row: 4 / span 1;
+      width: 24rem; }
+      body footer .footerBottom ul {
+        width: 100% !important; }
+    body footer .footerCenter ul, body footer .footerBottom ul {
+      margin-right: 0rem; } }
