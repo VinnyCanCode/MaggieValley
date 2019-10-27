@@ -668,15 +668,15 @@ html {
   .addedPadding {
     padding-left: 30px;
     padding-right: 30px; }
+  body header {
+    height: 100vh; }
   body .landingPageWrapper {
-    height: 85vh !important; }
+    height: 95vh !important; }
     body .landingPageWrapper .headerCenterContent {
       padding-right: 0px; }
       body .landingPageWrapper .headerCenterContent nav {
-        width: 40vw !important;
+        width: 80vw !important;
         justify-content: space-between !important; }
-        body .landingPageWrapper .headerCenterContent nav .hamburgerMenu {
-          display: none !important; }
         body .landingPageWrapper .headerCenterContent nav .fullMenu {
           display: none !important; }
       body .landingPageWrapper .headerCenterContent .headerWords {
@@ -728,7 +728,7 @@ html {
     height: 10rem;
     width: 10rem; }
   body footer {
-    height: 80%;
+    height: 130%;
     justify-content: flex-start; }
     body footer .footerWrapper {
       padding: 0 0;
@@ -736,8 +736,16 @@ html {
     body footer .footerNav {
       grid-row: 1 / span 1; }
     body footer .footerCenter {
-      height: 90%;
-      grid-row: 2 / span 2; }
+      grid-row: 2 / span 2;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr); }
+      body footer .footerCenter .footerItem .One, body footer .footerCenter .footerItem .Two {
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 1; }
+      body footer .footerCenter .footerItem .Three, body footer .footerCenter .footerItem .Four {
+        grid-row: 2 / span 1;
+        grid-column: 2 / span 1; }
     body footer .footerBottom {
       grid-row: 4 / span 1;
       width: 24rem; }
