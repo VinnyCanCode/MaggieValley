@@ -281,22 +281,26 @@ html {
           body .statsSection .statsWrapper .statsInfoWrapper .statButtons .buttonOne img, body .statsSection .statsWrapper .statsInfoWrapper .statButtons .buttonTwo img, body .statsSection .statsWrapper .statsInfoWrapper .statButtons .buttonThree img {
             width: 1rem;
             height: 1rem; }
-  body .supportSection .supportWrapper .supportInfo {
-    font-size: 1.3rem; }
-    body .supportSection .supportWrapper .supportInfo button {
-      width: 13rem; }
-  body .supportSection .supportWrapper .supportImg img {
-    height: 10rem;
-    width: 10rem; }
+  body .supportSection {
+    height: 40%; }
+    body .supportSection .supportWrapper .supportInfo {
+      font-size: 1.3rem; }
+      body .supportSection .supportWrapper .supportInfo button {
+        width: 13rem; }
+    body .supportSection .supportWrapper .supportImg img {
+      height: 10rem;
+      width: 10rem; }
   body footer {
-    height: 130%;
+    height: 115%;
     justify-content: flex-start; }
     body footer .footerWrapper {
       padding: 0 0;
       grid-template-rows: repeat(autofit, minmax(3rem, 1fr)); }
     body footer .footerNav {
+      height: 90%;
       grid-row: 1 / span 1; }
     body footer .footerCenter {
+      width: 100%;
       grid-row: 2 / span 2;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -314,3 +318,7 @@ html {
         width: 100% !important; }
     body footer .footerCenter ul, body footer .footerBottom ul {
       margin-right: 0rem; } }
+
+@media only screen and (max-device-height: 667px) and (orientation: portrait) {
+  html {
+    font-size: 12.5px; } }
