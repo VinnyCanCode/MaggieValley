@@ -322,3 +322,17 @@ html {
 @media only screen and (max-device-height: 667px) and (orientation: portrait) {
   html {
     font-size: 12.5px; } }
+
+@media only screen and (max-device-height: 568px) and (orientation: portrait) {
+  body header {
+    height: 125vh; }
+  body .landingPageWrapper {
+    height: 120vh !important; }
+  body .statsSection .statsWrapper {
+    height: 100vh;
+    padding-left: 20px;
+    padding-right: 20px; }
+  body footer {
+    height: 130%; }
+    body footer .footerBottom {
+      width: 23rem; } }
